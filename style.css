@@ -1684,39 +1684,188 @@ section {
     text-align: center;
   }
 }
-
-@media (max-width: 480px) {
-  .hero-headline {
-    font-size: 2.5rem;
+@media (max-width: 1200px) {
+  .container {
+    width: min(100% - 40px, 1100px);
   }
 
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-nav {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-stats {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .stat-divider {
-    width: 40px;
-    height: 1px;
+  .hero {
+    gap: 50px;
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
+@media (max-width: 1024px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 50px;
+    padding-top: 140px;
   }
 
-  * {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+  .hero-content,
+  .hero-image-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-actions,
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .about-grid,
+  .contact-grid,
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .services-grid,
+  .portfolio-grid,
+  .pricing-grid,
+  .team-grid,
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-image-frame img {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: min(100% - 32px, 100%);
+  }
+
+  .nav-links {
+    position: fixed;
+    top: var(--nav-h);
+    right: -100%;
+    width: 280px;
+    height: calc(100vh - var(--nav-h));
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 32px;
+    background: var(--bg-card);
+    border-left: 1px solid var(--border);
+    transition: var(--transition);
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero {
+    padding: 120px 20px 80px;
+    gap: 40px;
+  }
+
+  .hero-headline {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .hero-desc {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .services-grid,
+  .portfolio-grid,
+  .pricing-grid,
+  .team-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-image-frame img {
+    height: 320px;
+  }
+
+  .portfolio-filter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-pillars {
+    flex-direction: column;
+  }
+
+  .testimonial-controls {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 110px 16px 70px;
+  }
+
+  .hero-headline {
+    font-size: 2.2rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-image-frame img {
+    height: 240px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .service-card,
+  .portfolio-card,
+  .pricing-card,
+  .team-card,
+  .achievement-card,
+  .testimonial-card,
+  .contact-form-wrap {
+    padding: 20px;
+  }
+
+  .navbar {
+    padding-inline: 16px;
+  }
+}tant;
   }
 }
