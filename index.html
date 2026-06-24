@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VORTEX — Digital Product & Growth Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">VOR<span>TEX</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <canvas id="gridCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">Digital Studio · Est. 2019</div>
+      <h1 class="hero-headline reveal">
+        We Build<br />
+        <span class="split-text">Products</span><br />
+        That <span class="accent-text">Scale.</span>
+      </h1>
+      <p class="hero-desc reveal">VORTEX is a full-service digital agency crafting high-performance web experiences, brand identities, and growth strategies for ambitious companies worldwide.</p>
+      <div class="hero-actions reveal">
+        <a href="#portfolio" class="btn btn-primary">View Our Work <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num">180+</span><span class="stat-label">Projects Delivered</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">97%</span><span class="stat-label">Client Satisfaction</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Years of Excellence</span></div>
+      </div>
+    </div>
+    <div class="hero-image-wrap reveal">
+      <div class="hero-image-frame">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="Agency workspace" />
+        <div class="frame-glow"></div>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-image-col reveal">
+        <div class="about-img-stack">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80" alt="Team collaborating" class="about-img-main" />
+          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&q=80" alt="Creative process" class="about-img-secondary" />
+          <div class="about-badge">
+            <i class="fa-solid fa-award"></i>
+            <span>Top Agency 2024</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text-col reveal">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">A Studio Obsessed<br />with Impact</h2>
+        <p class="about-body">Founded in 2019, VORTEX brings together strategists, designers, engineers, and growth marketers under one roof. We don't just build websites — we architect digital ecosystems that generate measurable business results.</p>
+        <p class="about-body">Our cross-disciplinary approach means every project benefits from the full picture: brand thinking, UX rigor, engineering craft, and data-driven optimization all working in concert.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Fast Delivery</span>
+          </div>
+          <div class="pillar">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Quality Guaranteed</span>
+          </div>
+          <div class="pillar">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Growth Focused</span>
+          </div>
+        </div>
+        <a href="#services" class="btn btn-primary">Explore Services <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title">Services Built<br />for Results</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Brand Identity</h3>
+          <p>We craft visual identities that communicate your values instantly — logos, systems, and brand guidelines that work everywhere.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>From marketing sites to complex web apps, we engineer experiences that are fast, accessible, and built to last.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>Mobile Apps</h3>
+          <p>Native and cross-platform iOS and Android applications designed around how real users think and behave.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3>SEO & Growth</h3>
+          <p>Data-backed strategies that increase organic visibility, attract qualified traffic, and convert visitors into customers.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3>Digital Marketing</h3>
+          <p>Paid media, social campaigns, and content marketing that builds audiences and drives measurable ROI.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Research-led design that removes friction, delights users, and translates business goals into intuitive interfaces.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="why-text reveal">
+        <p class="section-eyebrow">Why Choose VORTEX</p>
+        <h2 class="section-title">Numbers Don't<br />Lie</h2>
+        <p class="why-desc">We measure everything, optimize relentlessly, and report transparently. Here's what six years of focused work looks like.</p>
+        <a href="#contact" class="btn btn-primary">Work With Us <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="why-grid reveal">
+        <div class="achievement-card">
+          <div class="ach-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="ach-num" data-target="180">0</div>
+          <div class="ach-label">Projects Completed</div>
+        </div>
+        <div class="achievement-card">
+          <div class="ach-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="ach-num" data-target="97">0</div>
+          <div class="ach-suffix">%</div>
+          <div class="ach-label">Happy Clients</div>
+        </div>
+        <div class="achievement-card">
+          <div class="ach-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="ach-num" data-target="42">0</div>
+          <div class="ach-label">Team Members</div>
+        </div>
+        <div class="achievement-card">
+          <div class="ach-icon"><i class="fa-solid fa-globe"></i></div>
+          <div class="ach-num" data-target="28">0</div>
+          <div class="ach-label">Countries Served</div>
+        </div>
+        <div class="why-feature">
+          <i class="fa-solid fa-check-circle"></i>
+          <div>
+            <strong>Dedicated Project Manager</strong>
+            <p>Every client gets a single point of contact from kickoff to launch.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <i class="fa-solid fa-check-circle"></i>
+          <div>
+            <strong>Transparent Reporting</strong>
+            <p>Real-time dashboards and weekly updates keep you fully in the loop.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <i class="fa-solid fa-check-circle"></i>
+          <div>
+            <strong>Post-Launch Support</strong>
+            <p>We stay on for 90 days after every launch — no extra charge.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <i class="fa-solid fa-check-circle"></i>
+          <div>
+            <strong>Agile Process</strong>
+            <p>Two-week sprints and continuous delivery mean you see progress fast.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Selected Work</p>
+        <h2 class="section-title">Projects We're<br />Proud Of</h2>
+      </div>
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="brand">Brand</button>
+        <button class="filter-btn" data-filter="app">App</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal" data-cat="web">
+          <div class="portfolio-img-wrap">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&q=80" alt="Finova Project" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Web Development</span>
+              <h3>Finova — Banking Platform</h3>
+              <p>Full-stack dashboard for a fintech startup serving 200k+ users.</p>
+              <a href="#" class="btn btn-ghost btn-sm">View Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-cat="brand">
+          <div class="portfolio-img-wrap">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=700&q=80" alt="Bloom Brand" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Brand Identity</span>
+              <h3>Bloom — Wellness Brand</h3>
+              <p>End-to-end brand system for a premium wellness subscription company.</p>
+              <a href="#" class="btn btn-ghost btn-sm">View Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-cat="app">
+          <div class="portfolio-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&q=80" alt="Routr App" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Mobile App</span>
+              <h3>Routr — Logistics App</h3>
+              <p>Cross-platform mobile app reducing delivery time by 34%.</p>
+              <a href="#" class="btn btn-ghost btn-sm">View Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-cat="web">
+          <div class="portfolio-img-wrap">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700&q=80" alt="Nexus Platform" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Web Development</span>
+              <h3>Nexus — SaaS Platform</h3>
+              <p>B2B SaaS product designed and built from zero to launch in 12 weeks.</p>
+              <a href="#" class="btn btn-ghost btn-sm">View Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-cat="brand">
+          <div class="portfolio-img-wrap">
+            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=700&q=80" alt="Arcana Brand" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Brand Identity</span>
+              <h3>Arcana — Luxury Retail</h3>
+              <p>Visual identity and e-commerce experience for a luxury fashion house.</p>
+              <a href="#" class="btn btn-ghost btn-sm">View Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-cat="app">
+          <div class="portfolio-img-wrap">
+            <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=700&q=80" alt="Velox App" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Mobile App</span>
+              <h3>Velox — Fitness Tracker</h3>
+              <p>iOS and Android fitness app with AI-powered coaching and analytics.</p>
+              <a href="#" class="btn btn-ghost btn-sm">View Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">The People</p>
+        <h2 class="section-title">Meet the Minds<br />Behind the Work</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Marcus Reid" />
+            <div class="team-social">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Marcus Reid</h3>
+            <span>Founder & CEO</span>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b5bc?w=400&q=80" alt="Aisha Okonkwo" />
+            <div class="team-social">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Aisha Okonkwo</h3>
+            <span>Creative Director</span>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Daniel Voss" />
+            <div class="team-social">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Daniel Voss</h3>
+            <span>Lead Engineer</span>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Priya Sharma" />
+            <div class="team-social">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Priya Sharma</h3>
+            <span>Head of Growth</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Client Voices</p>
+        <h2 class="section-title">What Our Clients<br />Actually Say</h2>
+      </div>
+      <div class="testimonials-track reveal">
+        <div class="testimonial-card active">
+          <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+          <p>"VORTEX rebuilt our entire platform in under three months. The new site converts at 3.2x our old rate. They didn't just deliver code — they understood our business."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80" alt="James Okafor" />
+            <div>
+              <strong>James Okafor</strong>
+              <span>CEO, Finova Financial</span>
+            </div>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+          <p>"We hired VORTEX for a rebrand and ended up with a whole new brand strategy. Their thinking goes beyond aesthetics into real business value. Phenomenal team."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80" alt="Claire Mendes" />
+            <div>
+              <strong>Claire Mendes</strong>
+              <span>CMO, Bloom Wellness</span>
+            </div>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+          <p>"The Routr app launched on time, under budget, and immediately received a 4.8-star rating on both stores. The attention to performance and UX detail was unlike any agency we've worked with."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Tom Eriksen" />
+            <div>
+              <strong>Tom Eriksen</strong>
+              <span>CTO, Routr Logistics</span>
+            </div>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="tctrl prev" id="prevTest"><i class="fa-solid fa-arrow-left"></i></button>
+          <div class="tctrl-dots" id="testDots"></div>
+          <button class="tctrl next" id="nextTest"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Investment</p>
+        <h2 class="section-title">Simple, Transparent<br />Pricing</h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price"><span class="currency">$</span>2,500<span class="period">/project</span></div>
+          <p class="plan-desc">Perfect for startups launching their first digital presence.</p>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> 5-page marketing website</li>
+            <li><i class="fa-solid fa-check"></i> Mobile-responsive design</li>
+            <li><i class="fa-solid fa-check"></i> Basic SEO setup</li>
+            <li><i class="fa-solid fa-check"></i> Contact form integration</li>
+            <li><i class="fa-solid fa-check"></i> 30-day post-launch support</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Custom integrations</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Analytics dashboard</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-full">Get Started</a>
+        </div>
+        <div class="pricing-card featured reveal">
+          <div class="plan-badge">Most Popular</div>
+          <div class="plan-name">Growth</div>
+          <div class="plan-price"><span class="currency">$</span>7,500<span class="period">/project</span></div>
+          <p class="plan-desc">For established businesses ready to scale their digital operation.</p>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Up to 20 pages</li>
+            <li><i class="fa-solid fa-check"></i> Custom UI/UX design</li>
+            <li><i class="fa-solid fa-check"></i> Full SEO optimization</li>
+            <li><i class="fa-solid fa-check"></i> CMS integration</li>
+            <li><i class="fa-solid fa-check"></i> Analytics dashboard</li>
+            <li><i class="fa-solid fa-check"></i> 2 custom integrations</li>
+            <li><i class="fa-solid fa-check"></i> 90-day post-launch support</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+        </div>
+        <div class="pricing-card reveal">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-price"><span class="currency"></span>Custom<span class="period"> pricing</span></div>
+          <p class="plan-desc">Full-service partnership for complex products and ongoing growth.</p>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Unlimited scope</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated team</li>
+            <li><i class="fa-solid fa-check"></i> Brand strategy included</li>
+            <li><i class="fa-solid fa-check"></i> Custom development</li>
+            <li><i class="fa-solid fa-check"></i> Marketing retainer option</li>
+            <li><i class="fa-solid fa-check"></i> Priority SLA support</li>
+            <li><i class="fa-solid fa-check"></i> Quarterly reviews</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-full">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-info reveal">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">Let's Build<br />Something Great</h2>
+        <p class="contact-desc">Ready to start your project? Drop us a line. We respond to every inquiry within one business day.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <strong>Email Us</strong>
+              <span>hello@vortexstudio.io</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Call Us</strong>
+              <span>+1 (415) 882-0049</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Our Office</strong>
+              <span>340 Pine St, San Francisco, CA 94104</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service">
+              <option value="">Select a service...</option>
+              <option>Brand Identity</option>
+              <option>Web Development</option>
+              <option>Mobile App</option>
+              <option>SEO & Growth</option>
+              <option>Digital Marketing</option>
+              <option>UI/UX Design</option>
+              <option>Enterprise / Custom</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea id="message" rows="4" placeholder="Share a bit about your goals, timeline, and budget..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i> Message sent! We'll be in touch within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">VOR<span>TEX</span></a>
+          <p>Building digital experiences that drive growth for ambitious brands worldwide.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Brand Identity</a></li>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">Mobile Apps</a></li>
+              <li><a href="#services">SEO & Growth</a></li>
+              <li><a href="#services">UI/UX Design</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#portfolio">Our Work</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>&copy; 2025 VORTEX Studio. All rights reserved.</span>
+        <span>Crafted with <i class="fa-solid fa-heart"></i> in San Francisco</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
